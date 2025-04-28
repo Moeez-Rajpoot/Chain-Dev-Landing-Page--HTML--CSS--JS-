@@ -13,7 +13,7 @@
 
 .card{
     width: 280px;
-    height: 250px;
+    height: 260px;
     background-color: white;
     border-radius: 10px;
     border-top-right-radius: 60px;
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 20px;
-    padding: 20px;
+    padding: 30px;
 }
 
 
@@ -36,8 +36,59 @@
 
 }
 
+.card:hover a , h3 , p{
+    color: white;
+    transition: 0.2s ease;
+}
+
 .card img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 10px;
 }
+
+.card #b-img{
+    display: none;
+}
+
+.card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card p{
+    color: #CCC5C4;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card a{
+    text-decoration: none;
+    color: #5594F2;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card a:hover i {
+    padding-left: 5px;
+    transition: 0.1s ease;
+}
+
+.card:hover * {
+    color: white;
+    transition: 0.2s ease;
+}
+
+#card1:hover #a-img{
+    display: none;
+} 
+#card1:hover #b-img{
+    display: block;
+}
+
+
+    
