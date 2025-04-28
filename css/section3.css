@@ -1,6 +1,8 @@
 #section3{
     width: 100%;
-    height: 100dvh;
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
 }
 #section3content{
     display: flex;
@@ -32,6 +34,7 @@
     background-size: cover;
     transition: 0.2s ease;
     background-repeat: no-repeat;
+    cursor: pointer;
   
 
 }
@@ -42,8 +45,8 @@
 }
 
 .card img{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     margin-bottom: 10px;
 }
 
@@ -67,7 +70,7 @@
 
 .card a{
     text-decoration: none;
-    color: #5594F2;
+    color: #357eec;
     font-weight: 500;
     font-size: 14px;
     margin-top: 10px;
@@ -80,6 +83,7 @@
 
 .card:hover * {
     color: white;
+    
     transition: 0.2s ease;
 }
 
@@ -88,6 +92,41 @@
 } 
 #card1:hover #b-img{
     display: block;
+}
+
+#card2:hover #a-img{
+    display: none;
+} 
+#card2:hover #b-img{
+    display: block;
+}
+
+
+#card3:hover #a-img{
+    display: none;
+} 
+#card3:hover #b-img{
+    display: block;
+}
+
+
+#card4:hover #a-img{
+    display: none;
+} 
+#card4:hover #b-img{
+    display: block;
+}
+
+
+#section3::after{
+    content: url('../Images/services-left-dec.png');
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    
 }
 
 
