@@ -80,6 +80,8 @@
     }
     #navlist{
         display: none;
+      
+        z-index: 2;
        
     }
 
