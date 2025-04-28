@@ -5,7 +5,10 @@
     background-position-x: right;
     background-position-y: top;
     width: 100%;
-    height: 70vh;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 
 }
 
