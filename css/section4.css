@@ -1,0 +1,227 @@
+#section4{
+    width: 100%;
+    height: 100dvh;
+    padding-top: 60px;
+    position: relative;
+}
+#section4::after {
+    content: " ";
+    width: 100%;    
+    height: 100%;
+ 
+    background-image: url('../Images/about-bg.jpg');
+    background-size: 800px;
+    background-repeat: no-repeat;
+    background-position: top right; 
+    position: absolute;
+    top: 0px; 
+    right: 0px;
+    z-index: -3;
+}
+
+#section4content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#right-section4{
+
+    width: 50%;
+    order: 2;
+
+}
+
+#left-section4{
+    width: 50%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#left-section4 h1{
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+#left-section4 h1 span{
+    color: #357eec;
+}
+
+#section4-line{
+
+    color: #357eec;
+    width: 100%;
+    margin-left: 20rem;
+}
+
+#section4-para{
+    font-size: 15px;
+    text-align: justify;
+    color: #0000003b;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    margin-left: 10rem;
+}
+
+#section4-cardmain{
+    display: grid;
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-left: 12rem;
+    
+}
+
+.section4-card{
+    border-radius: 70px;
+    height: 80px;
+    cursor: pointer;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+
+}
+
+.section4-card h2{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+.section4-card p{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    margin-left: 25px;
+    color: #0000003b;
+    margin-top: 5px;
+}
+
+.section4-card:hover h2{
+    color: #357eec;
+    transition: 0.2s ease;
+    
+}
+
+#section4-para2{
+    margin-left: 10rem;
+    font-size: 15px;
+    text-align: justify;
+    color: #0000003b;
+    font-weight: 200;
+    margin-top: 70px;
+}
+
+#trail-btn{
+    background :linear-gradient(90deg, #357eec 0%, #00c6ff 100%);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 17rem;
+}
+
+#trail-btn:hover{
+    background :linear-gradient(90deg, #00c6ff 0%, #357eec 100%);
+    transition: 0.2s ease;
+}
+
+#section4-para3{
+    font-size: 15px;
+    text-align: justify;
+    color: #0000003b;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    margin-right: 17rem;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    #section4::after {
+       display: none;
+    }
+    #section4content{
+        flex-direction: column;
+    }
+
+    #section4-line{
+    margin-left: 0rem;
+    text-align: center;
+
+    }
+
+
+    #left-section4, #right-section4{
+        width: 100svw;
+    }
+    #left-section4{
+        order: 1;
+        margin-top: 20px;
+
+    }
+    #right-section4 img{
+        width: 100%;
+        height: auto;
+        display: none;
+    }
+    #section4-para{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    #section4-cardmain{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0rem;
+
+    }
+    .section4-card{
+        height: 60px;
+    }
+
+    .section4-card h2{
+        font-size: 15px;
+        
+    }
+    
+    .section4-card p{
+        font-size: 10px;
+      
+    }
+
+    #section4-para2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #section4-para3{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #trail-btn{
+        margin-right: 0rem;
+        margin-top: 10px;
+    }
+   
+    
+}
+
+
